@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeoAI - AI-Powered Geospatial Predictions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🔹 Navigation Bar -->
+    <nav>
+        <div class="logo">GeoAI 🌍</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#upload-section">Upload Data</a></li>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 🔹 Hero Section with Dynamic Background -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1><span class="highlight">Explore the Future</span> of Geospatial AI</h1>
+            <p>Harness the power of artificial intelligence to understand our planet better.</p>
+            <a href="#upload-section" class="cta-button">Get Started</a>
+        </div>
+    </header>
+
+    <!-- 🔹 Features Section -->
+    <section class="features">
+        <h2>Why Choose GeoAI?</h2>
+        <div class="feature-cards">
+            <div class="feature-card">
+                <img src="assets/earth.png" alt="Earth">
+                <h3>AI-Powered Analysis</h3>
+                <p>Use advanced models to monitor environmental changes.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/satellite.png" alt="Satellite">
+                <h3>Real-Time Predictions</h3>
+                <p>Get accurate results from satellite and sensor data.</p>
+            </div>
+            <div class="feature-card">
+                <img src="assets/data.png" alt="Data">
+                <h3>Data-Driven Insights</h3>
+                <p>Make informed decisions based on geospatial trends.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔹 Upload Section -->
+    <section id="upload-section" class="upload-container">
+        <h2>Upload Your Geospatial Data</h2>
+        <p>Drag & drop a CSV file or click to browse.</p>
+        
+        <label for="fileInput" class="drop-area">
+            <input type="file" id="fileInput" hidden>
+            <span>📂 Drop your file here or Click to Upload</span>
+        </label>
+
+        <button onclick="uploadFile()">Upload & Predict</button>
+        <div id="result"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
